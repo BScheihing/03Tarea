@@ -54,9 +54,9 @@ Lorenz. El sistema de ecuaciones es el siguiente:
 > Latex:
     ```
     \begin{flalign*}
-    \dfrac{dy}{ds} &= \sigma (y - x)\\
+    \dfrac{dx}{ds} &= \sigma (y - x)\\
     \dfrac{dy}{ds} &= x (\rho - z) - y\\
-    \dfrac{dz}{dt} &= xy - \beta z
+    \dfrac{dz}{ds} &= xy - \beta z
     \end{flalign*}
     ```
 

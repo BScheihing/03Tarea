@@ -39,5 +39,7 @@ ax.plot(x, y, z)
 ax.set_xlabel('x')
 ax.set_ylabel('y')
 ax.set_zlabel('z')
+ax.set_title('Atractor de Lorenz, $(x_0,y_0,z_0) = (1,1,1)$')
+plt.savefig('Lorenz.eps')
 
 plt.show()

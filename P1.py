@@ -39,9 +39,17 @@ for i in range(N_steps):
 
 plt.figure(1)
 plt.plot(s,y)
+plt.xlabel('$s$')
+plt.ylabel('$y(s)$')
+plt.title('$y(s)$ para $\mu^* = 1.350$, $y(s=0)=0.1$, $dy/ds(s=0)=0$')
+plt.savefig('ys1.eps')
+
 plt.figure(2)
 plt.plot(y,dy)
-
+plt.xlabel('$y(s)$')
+plt.ylabel('$dy/ds(s)$')
+plt.title('$y(s)$ para $\mu^* = 1.350$, $y(s=0)=0.1$, $dy/ds(s=0)=0$')
+plt.savefig('ydy1.eps')
 
 #Caso 2
 y[0]=4.0
@@ -51,8 +59,17 @@ for i in range(N_steps):
 
 plt.figure(3)
 plt.plot(s,y)
+plt.xlabel('$s$')
+plt.ylabel('$y(s)$')
+plt.title('$y(s)$ para $\mu^* = 1.350$, $y(s=0)=4.0$, $dy/ds(s=0)=0$')
+plt.savefig('ys2.eps')
+
 plt.figure(4)
 plt.plot(y,dy)
+plt.xlabel('$y(s)$')
+plt.ylabel('$dy/ds(s)$')
+plt.title('$y(s)$ para $\mu^* = 1.350$, $y(s=0)=4.0$, $dy/ds(s=0)=0$')
+plt.savefig('ydy2.eps')
 
 plt.show()
 plt.draw()

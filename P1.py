@@ -1,3 +1,18 @@
+'''
+Este script resuelve el oscilador de van der Pol
+usando un metodo de Runge-Kutta orden 3. Las
+funciones implementadas estan directamente relacionadas
+con la solucion de la ecuacion diferencial: f es el
+lado derecho de la EDO, y el resto son funciones
+propias del metodo Runge-Kutta orden 3.
+
+Hacia el final del script se resuelve el oscilador
+de van der Pol para dos condiciones iniciales
+diferentes, graficando los resultados para y(s) y
+para el espacio y,dy/ds. Se guardan las imagenes
+en formato .eps.
+'''
+
 import numpy as np
 import matplotlib.pyplot as plt
 

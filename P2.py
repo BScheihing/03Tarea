@@ -1,3 +1,17 @@
+'''
+Este script resuelve el sistema de Lorenz usando
+el integrador dopri5 de la libreria scipy.integrate.
+Los parametros asociados al sistema de Lorenz estan
+fijos en la implementacion, para obtener la solucion
+conocida como el Atractor de Lorenz.
+
+La funcion f define el sistema con los parametros ya
+fijados. Luego el script integra (x,y,z) desde t=0
+hasta t=100 y crea una figura con la trayectoria en
+3D. Al final del script se guarda una de sus vistas
+en una imagen .eps.
+'''
+
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.integrate import ode
